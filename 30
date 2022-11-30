@@ -1,0 +1,31 @@
+soap=30
+sugar=150
+salt=200
+ricebag=1200
+maggie=15
+cphno=int(input("cphno"))
+name=input("name")
+address=input("address")
+a=int(input("enter no of soaps:"))
+b=int(input("enter tne no of packets of sugar:"))
+c=int(input("enter the no of packets of salt:"))
+d=int(input("enter the no of rice bags:"))
+e=int(input("no of maggie packets:"))
+bill=a*soap+b*sugar+c*salt+d*ricebag+e*maggie
+print(bill)
+if (bill>3000):
+      tax=bill*0.05
+elif (bill>2000):
+    tax=bill*0.07
+elif (bill>1000):
+    tax=bill*0.1
+elif (bill>500):
+    tax=bill*0.15
+else:
+    tax=100
+bill=bill+tax
+print(tax)
+print(name)
+print(cphno)
+print(address)
+print(bill)
